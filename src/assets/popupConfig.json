@@ -1,0 +1,16 @@
+{
+  "caça-níquel": {
+    "title": "Jogo de Caça-níquel",
+    "subtitle": "Ganhe prêmios incríveis!",
+    "formFields": ["nome", "gênero", "email", "número de celular"],
+    "consentCheckbox": true,
+    "content": "image"
+  },
+  "vídeo": {
+    "title": "Aprenda a ganhar nos jogos de azar!",
+    "subtitle": "Assista ao vídeo abaixo e preencha os dados!",
+    "formFields": ["nome", "gênero", "email", "número de celular"],
+    "consentCheckbox": false,
+    "videoUrl": "https://cdn.discordapp.com/attachments/1043718631416143874/1121613417514532914/videoplayback.mp4"
+  }
+}
