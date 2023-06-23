@@ -1,6 +1,6 @@
 # Popup Test
 
-Um projeto de teste para vaga de vue js.
+Um projeto de teste para vaga de vue js gerando um pwa.
 
 ## Pré-requisitos
 
