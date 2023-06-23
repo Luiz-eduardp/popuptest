@@ -18,7 +18,7 @@ Um projeto de teste para vaga de vue js.
 1. Edite o arquivo de configuração: `quasar.conf.js`
    - Personalize as configurações do Quasar conforme suas necessidades
 2. Edite o arquivo `src/assets/popupConfig.json` para alternar entres os campos dos popups
-3. No campo "content": "image" esperimente alternar entre image ou slot.
+3. No campo "content": "image" experimente alternar entre image ou slot.
 
 ## Desenvolvimento
 
