@@ -24,6 +24,7 @@
             class="form-field"
           >
             <q-input
+              class="input"
               standout
               v-model="text"
               :label="getFieldLabel(field)"

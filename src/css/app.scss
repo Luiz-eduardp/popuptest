@@ -1,3 +1,5 @@
+/* Blocks */
+
 .video {
   width: 350px;
   @media (max-width: 768px) {
@@ -10,49 +12,9 @@
   flex-wrap: wrap;
 }
 
-.item {
-  flex: 1 1 50%;
-}
-
 .page404 {
   opacity: 0.4;
   font-size: 34px;
-}
-
-@media (max-width: 768px) {
-  .item {
-    flex: 1 1 100%;
-  }
-}
-
-h1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #666;
-  margin-bottom: 8px;
-  line-height: 1;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #999;
-  margin-bottom: 6px;
-  line-height: 1;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 .popup {
@@ -67,7 +29,7 @@ h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 90%;
   width: 780px;
-  height: 564px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   &__close-button {
     position: absolute;
     top: 10px;
@@ -80,10 +42,13 @@ h3 {
   }
   @media (max-width: 768px) {
     width: 90%;
+    margin-top: 75px;
   }
   &__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Alinha verticalmente o conteúdo */
     gap: 20px;
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -101,17 +66,6 @@ h3 {
   font-size: 20px;
   padding: 16px;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .reel {
-    margin-right: 5px !important;
-  }
-  .symbol {
-    width: 80px !important;
-    height: 80px !important;
-    font-size: 16px !important;
-  }
 }
 
 .slot-machine {
@@ -149,22 +103,6 @@ h3 {
   transition: transform 0.5s ease;
 }
 
-.spin {
-  animation: spin 2s infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .overlay {
   position: fixed;
   left: 0;
@@ -183,5 +121,79 @@ h3 {
 }
 
 .slotImage {
-  width: 320px;
+  width: 350px;
+  @media (max-width: 768px) {
+    width: 250px !important;
+  }
+}
+
+/* Elements */
+
+.item {
+  flex: 1 1 50%;
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
+  }
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 6px;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.spin {
+  animation: spin 2s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .reel {
+    margin-right: 5px !important;
+  }
+  .symbol {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 16px !important;
+  }
 }
